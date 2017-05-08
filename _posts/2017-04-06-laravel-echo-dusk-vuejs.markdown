@@ -4,7 +4,7 @@ title:  "Let's try Laravel Echo, Dusk and Vue.js"
 date:   2017-05-08 08:00:00 +1400
 categories: laravel app
 tags: laravel, echo, dusk, vuejs
-twitter: 849003369372856320
+twitter: 861512696939790336
 ---
 
 The best way to learn new things and features is build something on that features. Of course you can learn the basics from video courses but you have to use it to be confident.
