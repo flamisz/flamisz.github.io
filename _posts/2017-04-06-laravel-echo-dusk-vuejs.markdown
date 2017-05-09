@@ -7,9 +7,9 @@ tags: laravel, echo, dusk, vuejs
 twitter: 861512696939790336
 ---
 
-The best way to learn new things and features is build something on that features. Of course you can learn the basics from video courses but you have to use it to be confident.
+The best way to learn new things and features is build something on that feature. Of course you can learn the basics from video courses, but you have to use it to be confident.
 
-That’s why I create a small “something” to learn and practice how to use and how **Laravel Echo** with **Pusher** works. It’s a kind of tutorial for myself.
+That’s why I create a small “something” to learn and practice how to use and how **Laravel Echo** with **Pusher** works. It’s a kind of tutorial for me.
 
 ![Comment app gif]({{ site.url }}/assets/images/comments2.gif)
 
@@ -17,9 +17,9 @@ That’s why I create a small “something” to learn and practice how to use a
 
 Therefore I build a simple website with comment module where users will get live notifications about comments.
 
-For front end I will use **vue.js** because I’d like learn the basics.
+For front end I will use **vue.js** because I’d like to learn the basics.
 
-Another think I would like to practise is testing in **Laravel**, specially the new browser test, **Dusk**.
+Another thing I would like to practice is testing in **Laravel**, especially the new browser test, **Dusk**.
 
 ## Round one: brainstorming
 The site will be very simple, at least at the beginning stage. It just has articles and on the article pages will be the comments. 
@@ -51,9 +51,10 @@ The site will be very simple, at least at the beginning stage. It just has artic
 * Comment page for admin to seeset spamdelete comments (v2)
 
 ## Round two: database
+
 **Design**
 
-Maybe it’s a little bit “old school” but I like design the database on paper in the beginning. I know maybe (sure) it will change later, but when I design the database I design the whole system in my head. And I like seeing the database, table names, field names, not just in the migration files.
+Maybe it’s a little bit “old school” but I like design the database on paper in the beginning. I know, maybe (sure) it will change later, but when I design the database I design the whole system in my head. And I like seeing the database, table names, field names, not just in the migration files.
 
 For the users I use the Laravel built in user migrations with a little modification because I need admin user.
 
@@ -64,7 +65,7 @@ I need two tables:
 * Comments table
 * Articles table
 
-I know I’ll need models and controllers as well so I create a model with migration and controller:
+I know I’ll need models and controllers as well, so I create a model with migration and controller:
 
 {% highlight php %}
 php artisan make:model Comment -mc
@@ -111,7 +112,7 @@ phpunit.xml
     [articles](https://github.com/flamisz/laravel-echo/tree/master/tests/Unit/ArticleTest.php)  
     [comments](https://github.com/flamisz/laravel-echo/tree/master/tests/Unit/CommentTest.php)
 
-I’m not a “maniac” TDD tester, so I’m using my browser for “visual” tests as well. I know you can create web application without open any browser, but that’s just not for me. I like to see my app during the development phase. But the tests are great of course, specially during refactoring.
+I’m not a “maniac” TDD tester, so I’m using my browser for “visual” tests as well. I know you can create web application without open any browser, but that’s just not for me. I like to see my app during the development phase. But the tests are great of course, especially during refactoring.
 
 Laravel uses [Bootstrap](http://getbootstrap.com) css framework for its basic views so in the beginning I will use it. Maybe later I’ll switch to [Bulma](http://bulma.io) .
 
@@ -119,7 +120,7 @@ Laravel uses [Bootstrap](http://getbootstrap.com) css framework for its basic vi
 The next step is to create the actual form where the users can submit the comments for the article. Let’s try [Laravel Dusk](https://laravel.com/docs/dusk). 
 
 **Settings**
-Because Laravel Dusk runs in a separate process we can't use the memory based sqlite database for testing. But we can create a separate .env file for dusk where we can set another default database connection. Don't forget to create the empty `database/testing.sqlite` file.
+Because Laravel Dusk runs in a separate process, we can't use the memory based sqlite database for testing. But we can create a separate `.env` file for dusk where we can set another default database connection. Don't forget to create the empty `database/testing.sqlite` file.
 
 {% highlight php %}
 .env.dusk.local
