@@ -17,8 +17,8 @@ title: 314 Blog Drive
 email: flamisz@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Something about development. Mostly Laravel.
-baseurl: "https://flamisz.github.io" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://flamisz.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: flamisz
 github_username:  flamisz
 google_analytics: UA-98725979-1
