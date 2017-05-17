@@ -5,6 +5,8 @@ date:   2017-05-08 08:00:00 +1400
 categories: laravel app
 tags: laravel, echo, dusk, vuejs
 twitter: 861512696939790336
+twitter_description: "Post about creating an app using Laravel Echo, Pusher and VueJs."
+twitter_image: "comments2.gif"
 ---
 
 The best way to learn new things and features is build something on that feature. Of course you can learn the basics from video courses, but you have to use it to be confident.
