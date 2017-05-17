@@ -4,7 +4,7 @@ title:  "Vuejs and SEO with Laravel"
 date:   2017-05-17 20:00:00 +1400
 categories: laravel vuejs
 tags: laravel, vuejs, seo
-twitter: 
+twitter: 864754806119727104
 twitter_description: "Post about Vue.js and SEO. Can Google indexing pages built by Laravel with Vue components and Ajax API calls?"
 twitter_image: "seo-vue-twitter.jpg"
 ---
