@@ -1,23 +1,29 @@
 ---
 layout: post
 title:  "Vuejs and SEO with Laravel"
-date:   2017-05-17 8:00:00 +1400
+date:   2017-05-17 20:00:00 +1400
 categories: laravel vuejs
 tags: laravel, vuejs, seo
-twitter: 861512696939790336
-twitter_description: "I tried out if Google can index properly the page which has ajax call."
-twitter_image: "vuejs.jpg"
+twitter: 
+twitter_description: "Post about Vue.js and SEO. Can Google indexing pages built by Laravel with Vue components and Ajax API calls?"
+twitter_image: "seo-vue-01.jpg"
 ---
 
-I read this in the Vue.js documentation:
+I read this in the `Vue.js` documentation:
 
 >Note that as of now, Google and Bing can index synchronous JavaScript applications just fine. Synchronous being the key word there. If your app starts with a loading spinner, then fetches content via Ajax, the crawler will not wait for you to finish. This means if you have content fetched asynchronously on pages where SEO is important, SSR might be necessary.
 
-I don't use SSR (server-side-rendering) and I'd like to know, how can the Google indexing a page. I wanted a proof it works.
+So I tried it.
 
-For this I created a Laravel app. A very simple one which get the data from the database and show it on a page.
+![Seo Vue 1]({{ site.url }}/assets/images/seo-vue-01.jpg)
 
-Without `Vue.js` and ajax calls the code looks like this:
+<!--more-->
+
+I don't use SSR (server-side-rendering) but I'd like to know, how can the Google indexing a page which fetches content via Ajax. I wanted a proof it works.
+
+Therefore I created a `Laravel` app. A very simple one which gets data from the database and show it on a page.
+
+Without `Vue.js` and `Ajax` the code looks like this:
 
 {% highlight javascript %}
 {% raw %}
@@ -64,7 +70,8 @@ Route::get('articles/{article}', function (App\Article $article) {
 {% endraw %}
 {% endhighlight %}
 
-I created the same page but this time I collected the data via ajax api calls:
+I created the same page but this time I fetched the data via `Ajax` API calls:
+
 {% highlight javascript %}
 {% raw %}
 
@@ -164,10 +171,10 @@ Route::get('comments', function () {
 {% endraw %}
 {% endhighlight %}
 
-The results of the two pages was the same. I installed the app to a server where I created two subdomains and added them two my google webmaster tool. 
+The results of the two pages were the same. I installed the app to a server where I created two subdomains and added them two `Google` webmaster tool. 
 
-The first try was the "Fetch as Google". I clicked on the fetch and render button and waited for the result. 
-On the Fetching tab we can see the html source code. The main part of my page looked like this:
+The first try was the `Fetch as Google`. I clicked on the `Fetch and render` button and waited for the result. 
+On the `Fetching` tab we can see the html source code. The main part of my page looked like this:
 
 {% highlight html %}
 {% raw %}
@@ -180,13 +187,15 @@ On the Fetching tab we can see the html source code. The main part of my page lo
 {% endhighlight %}
 
 Not too promising. BUT! On the rendering page I found this:
+
 ![Seo Vue 1]({{ site.url }}/assets/images/seo-vue-01.jpg)
 
-So the googlebot can see what the users can see! Good news. But I didn't stop here. I requested the indexing and waiting. And waiting. And waiting. Sometimes I checked google site and searching for this:
+So the `googlebot` can see what the users can see! Good news. But I didn't stop here. I requested the indexing and waiting. And waiting. And waiting. Sometimes I checked `google` site and searching for this:
 
 `site:3-14.co final test`
 
 Finally next day I got something:
+
 ![Seo Vue 2]({{ site.url }}/assets/images/seo-vue-02.jpg)
 
 It worked. 
@@ -195,9 +204,15 @@ I tried one more thing. I was searching for this:
 
 `site:3-14.co comments`
 
-This way I could see if the normal page (without ajax calls) is more recent on google, but not:
+This way I could see if the normal page (without `Ajax`) is more recent on `Google`, but not:
+
 ![Seo Vue 3]({{ site.url }}/assets/images/seo-vue-03.jpg)
 
+### Conclusion
+
+We don't need to be afraid to use API and Ajax calls in our applications even if the `SEO` is important to our site, because `Google` can fetch the content properly. But don't forget:
+
+>Synchronous being the key word there.
 
 
 
