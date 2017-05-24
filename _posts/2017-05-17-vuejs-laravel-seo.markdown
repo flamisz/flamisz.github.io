@@ -210,14 +210,4 @@ This way I could see if the normal page (without `Ajax`) is more recent on `Goog
 
 ### Conclusion
 
-We don't need to be afraid to use API and Ajax calls in our applications even if the `SEO` is important to our site, because `Google` can fetch the content properly. But don't forget:
-
->Synchronous being the key word there.
-
-
-
-
-
-
-
-
+We don't need to be afraid to use API and Ajax calls in our applications even if the `SEO` is important to our site, because `Google` can fetch the content properly.
