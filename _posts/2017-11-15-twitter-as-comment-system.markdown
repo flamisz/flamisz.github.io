@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Twitter as comment system"
-date:   2017-05-17 20:00:00 +1400
+date:   2017-11-15 12:00:00 +1400
 categories: tips
 tags: twitter, jekyll
 twitter: 930595790128427009
