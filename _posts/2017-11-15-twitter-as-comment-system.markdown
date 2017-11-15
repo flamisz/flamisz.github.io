@@ -4,7 +4,7 @@ title:  "Twitter as comment system"
 date:   2017-05-17 20:00:00 +1400
 categories: tips
 tags: twitter, jekyll
-twitter: 864754806119727104
+twitter: 930595790128427009
 twitter_description: "Post about how I'm using Twitter as a comment system on my Jekyll GitHub Page."
 twitter_image: "twitter-comment.jpg"
 ---
