@@ -7,6 +7,7 @@ tags: twitter, jekyll
 twitter: 930595790128427009
 twitter_description: "Post about how I'm using Twitter as a comment system on my Jekyll GitHub Page."
 twitter_image: "twitter-comment.jpg"
+redirect_from: "/tips/2017/11/15/twitter-as-comment-system.html"
 ---
 
 Yesterday I read a tweet from  [@freekmurze](https://twitter.com/freekmurze/status/930175357294141440):

@@ -7,6 +7,7 @@ tags: laravel, vuejs, seo
 twitter: 864754806119727104
 twitter_description: "Post about Vue.js and SEO. Can Google indexing pages built by Laravel with Vue components and Ajax API calls?"
 twitter_image: "seo-vue-twitter.jpg"
+redirect_from: "/laravel/vuejs/2017/05/17/vuejs-laravel-seo.html"
 ---
 
 I read this in the `Vue.js` documentation:
@@ -52,12 +53,12 @@ Route::get('articles/{article}', function (App\Article $article) {
         <div class="col-md-8 col-md-offset-2">
             <h3>Comments</h3>
         </div>
-        
+
         @foreach ($article->comments as $comment)
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">{{ $comment->owner->name }}</div>
-                
+
                     <div class="panel-body">
                         {{ $comment->body }}
                     </div>
@@ -151,7 +152,7 @@ Route::get('comments', function () {
     <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-default">
             <div class="panel-heading">{{ comment.owner.name }}</div>
-        
+
             <div class="panel-body">
                 {{ comment.body }}
             </div>
@@ -171,9 +172,9 @@ Route::get('comments', function () {
 {% endraw %}
 {% endhighlight %}
 
-The results of the two pages were the same. I installed the app to a server where I created two subdomains and added them two `Google` webmaster tool. 
+The results of the two pages were the same. I installed the app to a server where I created two subdomains and added them two `Google` webmaster tool.
 
-The first try was the `Fetch as Google`. I clicked on the `Fetch and render` button and waited for the result. 
+The first try was the `Fetch as Google`. I clicked on the `Fetch and render` button and waited for the result.
 On the `Fetching` tab we can see the html source code. The main part of my page looked like this:
 
 {% highlight html %}
@@ -198,7 +199,7 @@ Finally next day I got something:
 
 ![Seo Vue 2]({{ site.url }}/assets/images/seo-vue-02.jpg)
 
-It worked. 
+It worked.
 
 I tried one more thing. I was searching for this:
 

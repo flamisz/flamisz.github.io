@@ -22,6 +22,7 @@ url: "https://flamiszoltan.me" # the base hostname & protocol for your site, e.g
 twitter_username: flamisz
 github_username:  flamisz
 google_analytics: UA-98725979-1
+permalink: /:title
 
 excerpt_separator: <!--more-->
 
@@ -30,6 +31,7 @@ markdown: kramdown
 
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock

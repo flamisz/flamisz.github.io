@@ -7,6 +7,7 @@ tags: laravel, echo, dusk, vuejs
 twitter: 861512696939790336
 twitter_description: "Post about creating an app using Laravel Echo, Pusher and VueJs."
 twitter_image: "comments2.gif"
+redirect_from: "/laravel/app/2017/05/08/laravel-echo-dusk-vuejs.html"
 ---
 
 The best way to learn new things and features is build something on that feature. Of course you can learn the basics from video courses, but you have to use it to be confident.
@@ -24,7 +25,7 @@ For front end I will use **vue.js** because I’d like to learn the basics.
 Another thing I would like to practice is testing in **Laravel**, especially the new browser test, **Dusk**.
 
 ## Round one: brainstorming
-The site will be very simple, at least at the beginning stage. It just has articles and on the article pages will be the comments. 
+The site will be very simple, at least at the beginning stage. It just has articles and on the article pages will be the comments.
 
 **Guest user can**
 * read articles
@@ -111,7 +112,7 @@ phpunit.xml
 **Unit tests**
 * tests for the Article and Comment models
 
-    [articles](https://github.com/flamisz/laravel-echo/tree/master/tests/Unit/ArticleTest.php)  
+    [articles](https://github.com/flamisz/laravel-echo/tree/master/tests/Unit/ArticleTest.php)
     [comments](https://github.com/flamisz/laravel-echo/tree/master/tests/Unit/CommentTest.php)
 
 I’m not a “maniac” TDD tester, so I’m using my browser for “visual” tests as well. I know you can create web application without open any browser, but that’s just not for me. I like to see my app during the development phase. But the tests are great of course, especially during refactoring.
@@ -119,7 +120,7 @@ I’m not a “maniac” TDD tester, so I’m using my browser for “visual” 
 Laravel uses [Bootstrap](http://getbootstrap.com) css framework for its basic views so in the beginning I will use it. Maybe later I’ll switch to [Bulma](http://bulma.io) .
 
 ## Create a form
-The next step is to create the actual form where the users can submit the comments for the article. Let’s try [Laravel Dusk](https://laravel.com/docs/dusk). 
+The next step is to create the actual form where the users can submit the comments for the article. Let’s try [Laravel Dusk](https://laravel.com/docs/dusk).
 
 **Settings**
 Because Laravel Dusk runs in a separate process, we can't use the memory based sqlite database for testing. But we can create a separate `.env` file for dusk where we can set another default database connection. Don't forget to create the empty `database/testing.sqlite` file.
@@ -187,7 +188,7 @@ axios.get('/articles/' + this.article + '/comments')
 
 It contains the [comment](https://github.com/flamisz/laravel-echo/tree/master/resources/assets/js/components/Comment.vue) component to show a simple comment.
 
-In the header of the a comment I show the time, when the comment was created. First, I'd like to show it for 'humans' (eg: 2 days ago), secondly I'd like to refresh it, let's say every minute. 
+In the header of the a comment I show the time, when the comment was created. First, I'd like to show it for 'humans' (eg: 2 days ago), secondly I'd like to refresh it, let's say every minute.
 
 If I don't want to refresh it, I can do something like this in the [Comment model](https://github.com/flamisz/laravel-echo/tree/master/app/Comment.php):
 
@@ -203,7 +204,7 @@ public function getFormattedCreatedAtAttribute()
 
 After this it will be always loaded to the json file of the model. So when I get the comments in the `comment-list` component (by the way, I use **axios** for Ajax calls), every comment's has this attribute. In the html we will see something like this (good practise to include the original time as well, good for testing for example).
 
-{% highlight html %}  
+{% highlight html %}
 <time datetime="2017-05-07 12:44:19"> 2 hours ago</time>
 {% endhighlight %}
 
@@ -288,7 +289,7 @@ computed: {
         return (!!this.newComments.length)
     },
     newCommentMessage: function () {
-        return this.newComments.length + ' new' 
+        return this.newComments.length + ' new'
     }
 },
 
@@ -361,4 +362,4 @@ public function a_user_can_view_if_somebody_write_a_comment()
 This is just the tip of the iceberg but after we learn the basics we can easily develop something bigger. For me the next step is to build a complete comment module with `VueJS` and integrate it to `Laravel`.
 
 [Github](https://github.com/flamisz/laravel-echo) page of the app.
-    
+
