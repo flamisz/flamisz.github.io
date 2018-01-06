@@ -4,7 +4,7 @@ title:  "Mutable vs Immutable problem"
 date:   2018-01-06 12:00:00 +1400
 categories: php laravel
 tags: php
-twitter:
+twitter: 949462842981326848
 twitter_description: "Mutable vs Immutable problem with intervention image library."
 twitter_image: "mutable.jpg"
 ---
