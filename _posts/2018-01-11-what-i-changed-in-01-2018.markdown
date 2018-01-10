@@ -4,7 +4,7 @@ title:  "What I changed in the beginning of 2018"
 date:   2018-01-11 12:00:00 +1400
 categories: life
 tags: life
-twitter:
+twitter: 951230587016167425
 twitter_description: "What I changed in the beginning of 2018"
 twitter_image: "phones.jpg"
 ---
