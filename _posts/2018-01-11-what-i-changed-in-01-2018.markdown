@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "What I changed in the beginning of 2018"
+date:   2018-01-11 12:00:00 +1400
+categories: life
+tags: life
+twitter:
+twitter_description: "What I changed in the beginning of 2018"
+twitter_image: "phones.jpg"
+---
+I changed a few things in the end of 2017 and beginning of 2018. Specially in my IT life.
+
+![Phones]({{ site.url }}/assets/images/phones.jpg)
+
+<!--more-->
+
+#### Computer setup
+
+Last month, before we closed the office for the holidays, I went from 2 monitors setup to **1 monitor setup**. Immediately felt light-weighted and cleaner, if you know what I mean. I don't have a huge monitor (only 24", Dell UltraSharp 1920x1200) but I think it's enough.
+
+Currently trying to use my mac without the **dock** always open, but somehow I like it so always turn it back :smile:.
+
+I switched my mouse to a **trackball**. I used a trackball long time ago and I thought I try it again. I do not regret. I bought the MX ergo wireless from Logitech. It's very comfy to use and has a few fully configurable buttons (even keyboard shortcuts).
+
+I went back to **SublimeText**. I tried Atom, Vs Code but after a few weeks or even month when I loaded SublimeText I enjoyed. I think it's good for me and I happy the developers more active these days.
+
+I use **Firefox** as my #1 browser now. Previously I used Safari as my browser browser and Chrome as my working browser but I try to use Firefox for both. Even on my phone! I don't like sites are made for only Chrome! I like what the Mozilla does for the net, this way maybe I can support them.
+
+My email address is **gmail** address but I used Mail app on my mac and on my phone. Last year I tried a few other clients (the best was the Spark) but nothing worked the way I wanted. On my phone I installed the gmail app and on my Mac I use the browser to read emails now. I set up more labels and rules. Will see how it goes, I'm not sure about this yet.
+
+#### Security - password
+
+I'm very bad user if it is about passwords! I've always been. I use the same passwords in different places, never change them (OK, my passwords are not password1234 or something simple but still), and my password manager is the mac keychain. I know, I know, I'm baaad.
+
+So I decided to change this. First I tried the free version of last pass. It wasn't for me. The client, the browser extension, the automatic fillings (it adds extra html to the forms!!!), so I tried the other big gamer: **1Password**.
+
+This is much much better. This is an app I pay for it. The automatic login with keyboard shortcut, the app itself, everything.
+
+I started to change my old passwords (my google password was changed in 2007 previously), I just use the 1Password auto generate function. I like it.
+
+I turn on the **2 factor authentication** for more and more sites. I use the goggle Authenticator for this one. It was already turned on on my apple devices, but it works funny when I authenticate on device which has icloud synchronization, because I get the code on that device :smile:.
+
+#### iPhone
+
+I had a space gray iPhone 5s since 2015. That was my first iPhone. I like it, but it was time to change. I didn't want an extra big one and I wanted the latest technology because I'd like to use 2-3 years.
+
+I was thinking about the X, but finally I chose the **iPhone8** and this time a white one! Looks very good in white: the black screen goes well with the white frame. Of course this is much faster, it has bigger screen, but one other thing is very cool is the wireless charging! I love it.
+
+I bought the **Belkin boost up** charger for iPhones. It charges fast, while I'm home I just put the phone on the well designed "plate" and it's charging. Magic!
+
+I don't like phone cases, but because the phone very new, I just bought a pair of baby socks and use it as a case :smile:.
+
+#### Ruby and Rails
+
+In my workplace I use PHP and Laravel every day but Ruby always interested me. I started to learn and make a side project with Rails.
+
+#### Stoicism
+
+I read about stoicism and it looked very interesting so know I try to dig deeper in this topic. Started to read Meditations by Marcus Aurelius and borrowed other books from the library. I'm just in the very beginning of this road but I'm curious about where it goes.
