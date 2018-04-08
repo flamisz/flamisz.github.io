@@ -4,7 +4,7 @@ title:  "Codeigniter 3 and Twitter authentication"
 date:   2018-04-08 12:00:00 +1400
 categories: codeigniter php
 tags: codeigniter, twitter, authentication
-twitter: 
+twitter: 982803726560718849
 twitter_description: "Codeigniter 3 and Twitter authentication"
 twitter_image: "twitter_ci.jpg"
 github_link: "https://github.com/flamisz/ci_test"
@@ -92,7 +92,7 @@ $this->authenticate->remember($user);
 
 #### Create or find user
 
-I need a database, a user table in it and a [`user_model`]({{ page.github_link }}/blob/twitter-oath/application/models/User_model.php). I use [Sequel Pro](https://www.sequelpro.com/) for **mySql** databases. I create a `database` folder in my project root and save the [`create_table.sql`]({{ page.github_link }}/blob/twitter-oath/application/controllers/Auth.php). in it (and run on my database).
+I need a database, a user table in it and a [`user_model`]({{ page.github_link }}/blob/twitter-oath/application/models/User_model.php). I use [Sequel Pro](https://www.sequelpro.com/) for **mySql** databases. I create a `database` folder in my project root and save the [`create_table.sql`]({{ page.github_link }}/blob/twitter-oath/database/create_table.sql). in it (and run on my database).
 
 The user create process:
 1. Find the user by the twitter uid
