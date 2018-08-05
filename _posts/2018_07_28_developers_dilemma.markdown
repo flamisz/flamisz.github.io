@@ -5,7 +5,6 @@ date:   2018-08-05 12:00:00 +0200
 categories: laravel php
 tags: laravel
 ---
-
 I left my job. It happened a few months back. I wanted to move. Move from that city, move and try something new. Before I get a new job I can work on sideprojects and do some freelancing job. That was the plan, but first I had to make some decisions...
 
 <!--more-->
