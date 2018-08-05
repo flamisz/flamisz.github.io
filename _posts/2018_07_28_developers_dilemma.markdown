@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Developers's dilemma"
-date:   2018-08-05 01:00:00 +1400
+date:   2018-08-05 12:00:00 +0200
 categories: laravel php
 tags: laravel
 ---
