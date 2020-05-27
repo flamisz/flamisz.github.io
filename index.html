@@ -1,0 +1,16 @@
+---
+layout: default
+no_title: true
+---
+
+This is the index page.
+
+<h2>Newest Today I Learns</h2>
+
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>

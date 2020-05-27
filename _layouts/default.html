@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% unless page.no_title %}
+    <title>{{ page.title }} | {{ site.title }}</title>
+    {% else %}
+    <title>{{ site.title }}</title>
+    {% endunless %}
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="{{ site.url }}">3.14 Blog Drive</a></h1>
+        <nav>
+            <a href="/til">TIL</a> |
+            <a href="/how-i">How I</a> |
+            <a href="/now">Now</a>
+        </nav>
+    </header>
+
+    {{ content }}
+</body>
+
+</html>
