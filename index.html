@@ -2,15 +2,42 @@
 layout: default
 no_title: true
 ---
-
 This is the index page.
 
-<h2>Newest Today I Learns</h2>
+<h2>Newest TIL <a href="/til"><small>all &rarr;</small></a></h2>
 
 <ul>
-    {% for post in site.posts %}
+    {% for post in site.categories.til %}
     <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
 </ul>
+
+<h2>Newest How I <a href="/how-i"><small>all &rarr;</small></a></h2>
+
+<ul>
+    {% for post in site.categories.how-i %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<h2>Newest Something else <a href="/something-else"><small>all &rarr;</small></a></h2>
+
+<ul>
+    {% for post in site.categories.something-else %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<form action="https://duckduckgo.com/" method="get" class="inlineform">
+	<label for="q">Search flamiszoltan.me for anything:</label>
+	<input type="text" name="q" value="" required="">
+	<input type="hidden" name="sites" value="flamiszoltan.me">
+	<input type="hidden" name="ia" value="web">
+	<input type="submit" value="search">
+</form>

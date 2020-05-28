@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<h2>How <strike>to</strike> I solved</h2>
+## Something else
 
 <ul>
-    {% for post in site.categories.how-i %}
+    {% for post in site.categories.something-else %}
     <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
