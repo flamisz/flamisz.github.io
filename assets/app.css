@@ -434,6 +434,11 @@ img {
     max-width: 100%;
 }
 
+/* extra */
+nav > span {
+    color: var(--nc-lk-1);
+}
+
 /* highlight */
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
