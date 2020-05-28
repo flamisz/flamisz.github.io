@@ -1,16 +1,16 @@
 :root {
 	--nc-font-sans: 'Roboto Slab', serif;
 	--nc-font-mono: 'Roboto Mono', monospace;
-	--nc-tx-1: #000000;
-	--nc-tx-2: #1A1A1A;
+	--nc-tx-1: #252f3f;
+	--nc-tx-2: #252f3f;
 	--nc-bg-1: #FFFFFF;
-	--nc-bg-2: #F6F8FA;
-	--nc-bg-3: #E5E7EB;
-	--nc-lk-1: #0070F3;
-	--nc-lk-2: #0366D6;
+	--nc-bg-2: #e5e7eb;
+	--nc-bg-3: #d2d6dc;
+	--nc-lk-1: #3f83f8;
+	--nc-lk-2: #1c64f2;
 	--nc-lk-tx: #FFFFFF;
-	--nc-ac-1: #79FFE1;
-    --nc-ac-tx: #0C4047;
+	--nc-ac-1: #a4cafe;
+    --nc-ac-tx: #374151;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -142,11 +142,13 @@ h6 {
 }
 
 a {
-	color: var(--nc-lk-1);
+    color: var(--nc-lk-1);
+    text-decoration: none;
 }
 
 a:hover {
-	color: var(--nc-lk-2);
+    color: var(--nc-lk-2);
+    text-decoration: underline;
 }
 
 abbr:hover {
