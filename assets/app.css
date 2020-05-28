@@ -3,12 +3,12 @@
     --nc-font-mono: 'Roboto Mono', monospace;
     --nc-tx-1: #252f3f;
     --nc-tx-2: #252f3f;
-    --nc-bg-1: #FFFFFF;
+    --nc-bg-1: #ffffff;
     --nc-bg-2: #e5e7eb;
     --nc-bg-3: #d2d6dc;
     --nc-lk-1: #0e9f6e;
     --nc-lk-2: #057a55;
-    --nc-lk-tx: #FFFFFF;
+    --nc-lk-tx: #ffffff;
     --nc-ac-1: #a4cafe;
     --nc-ac-tx: #374151;
 }
@@ -22,9 +22,9 @@
         --nc-bg-3: #222222;
         --nc-lk-1: #057a55;
         --nc-lk-2: #046c4e;
-        --nc-lk-tx: #FFFFFF;
+        --nc-lk-tx: #ffffff;
         --nc-ac-1: #1c64f2;
-        --nc-ac-tx: #FFFFFF;
+        --nc-ac-tx: #ffffff;
     }
 }
 

@@ -1,6 +1,6 @@
 ---
 layout: default
 ---
-## Uses
+### Uses
 
 What I use

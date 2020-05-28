@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-## How <strike>to</strike> I solved
+### How <strike>to</strike> I solved
 
 <ul>
     {% for post in site.categories.how-i %}
