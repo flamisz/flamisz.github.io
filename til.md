@@ -1,7 +1,7 @@
 ---
 layout: default
+title: TIL
 ---
-### TIL
 
 <ul>
     {% for post in site.categories.til %}

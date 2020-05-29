@@ -1,6 +1,6 @@
 ---
 layout: default
+title: Uses
 ---
-### Uses
 
-What I use
+What I'm uses

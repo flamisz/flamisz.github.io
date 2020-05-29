@@ -1,2 +1,5 @@
 url: "https://flamiszoltan.me"
 title: "314 Blog Drive"
+
+permalink: /:title
+description: "Web app writer."

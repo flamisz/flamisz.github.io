@@ -1,7 +1,7 @@
 ---
 layout: default
+title: Something else
 ---
-### Something else
 
 <ul>
     {% for post in site.categories.something-else %}
