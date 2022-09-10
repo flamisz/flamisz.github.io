@@ -7,9 +7,12 @@ return [
     'description' => 'Zoltan\'s page',
     'collections' => [
         'posts' => [
-            'path' => 'blog/{filename}-{date|Y-m-d}',
+            'path' => '{filename}-{date|Y-m-d}',
             'author' => 'Zoltan',
             'sort' => ['-date'],
+            'excerpt' => function ($page, $characters = 50) {
+                return substr(strip_tags($page->getContent()), 0, $characters);
+            },
         ],
     ],
 ];

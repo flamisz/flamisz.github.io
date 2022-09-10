@@ -10,8 +10,10 @@
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
     <body class="text-gray-900 font-sans antialiased">
-        <div class="prose">
-            @yield('body')
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-3xl">
+                @yield('body')
+            </div>
         </div>
     </body>
 </html>
