@@ -512,15 +512,71 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.ml-4 {
+  margin-left: 1rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.inline-block {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-6 {
+  height: 1.5rem;
+}
+.w-12 {
+  width: 3rem;
+}
+.w-6 {
+  width: 1.5rem;
+}
 .max-w-7xl {
   max-width: 80rem;
 }
 .max-w-3xl {
   max-width: 48rem;
 }
+.flex-none {
+  flex: none;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.fill-zinc-500 {
+  fill: #71717a;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.text-center {
+  text-align: center;
 }
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -529,15 +585,58 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+.font-medium {
+  font-weight: 500;
+}
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+.text-zinc-800 {
+  --tw-text-opacity: 1;
+  color: rgb(39 39 42 / var(--tw-text-opacity));
 }
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.hover\:text-teal-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(20 184 166 / var(--tw-text-opacity));
+}
+.group:hover .group-hover\:fill-teal-500 {
+  fill: #14b8a6;
+}
+@media (prefers-color-scheme: dark) {
+
+  .dark\:text-zinc-200 {
+    --tw-text-opacity: 1;
+    color: rgb(228 228 231 / var(--tw-text-opacity));
+  }
+
+  .dark\:hover\:text-teal-500:hover {
+    --tw-text-opacity: 1;
+    color: rgb(20 184 166 / var(--tw-text-opacity));
+  }
+}
 @media (min-width: 640px) {
+
+  .sm\:my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sm\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 
   .sm\:px-6 {
     padding-left: 1.5rem;
@@ -545,6 +644,21 @@ video {
   }
 }
 @media (min-width: 1024px) {
+
+  .lg\:my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lg\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .lg\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 
   .lg\:px-8 {
     padding-left: 2rem;
